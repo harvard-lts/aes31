@@ -2,8 +2,8 @@
 //  AES31_3.java
 //  AES31-3
 //
-//  Created by David Ackerman on 7/5/05.
-//  Copyright (c) 2005 David Ackerman. All rights reserved.
+//  Created by Kaylie Ackerman on 7/5/05.
+//  Copyright (c) 2005 Kaylie Ackerman. All rights reserved.
 //
 import java.util.*;
 import java.io.*;
