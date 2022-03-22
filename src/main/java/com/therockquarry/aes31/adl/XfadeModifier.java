@@ -25,12 +25,11 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
-import java.text.*;
+import java.text.DecimalFormat;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 public class XfadeModifier extends BaseModifier implements Cloneable {
 

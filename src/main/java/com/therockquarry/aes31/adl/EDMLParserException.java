@@ -27,6 +27,8 @@ package com.therockquarry.aes31.adl;
 
 public class EDMLParserException extends Exception
 {
+    private static final long serialVersionUID = 1L;
+
     public EDMLParserException ()
     {
 	super ();

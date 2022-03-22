@@ -23,7 +23,10 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
 *	An extension of java.util.TreeMap that allows keys to be located in the list

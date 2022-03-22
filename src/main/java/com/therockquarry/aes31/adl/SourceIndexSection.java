@@ -25,12 +25,15 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.text.*;
-import java.util.*;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>SourceIndexSection</code> object contains a list of all of the audio sources utilized by the ADL.
@@ -73,7 +76,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 	public void addSourceEntryAtIndex (int index, SourceEntry entry) throws InvalidDataException
 	{
 
-		Integer i = new Integer(index);
+		Integer i = index;
 		
 		if (!validateIndexNumber(index))
 		{
@@ -116,7 +119,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 		
 		if (!_indexMap.containsValue(entry))
 		{
-			_indexMap.put(new Integer(lastKey), entry);
+			_indexMap.put(lastKey, entry);
 			entry.setParent(this);
 		}
 		else
@@ -143,7 +146,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 	*/
 	public void deleteSourceEntryAtIndex (int index)
 	{
-		Integer i = new Integer(index);
+		Integer i = index;
 		
 		if (_indexMap.containsKey(i))
 		{
@@ -163,7 +166,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 	{
 		if (validateIndexNumber(index))
 		{
-			Integer key = new Integer(index);
+			Integer key = index;
 			
 			_indexMap.put(key, entry);
 			entry.setParent(this);
@@ -199,7 +202,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 	{
 		SourceEntry rval = null;
 		
-		rval = (SourceEntry)_indexMap.get(new Integer(index));
+		rval = (SourceEntry)_indexMap.get(index);
 		
 		return rval;
 	}
@@ -239,7 +242,7 @@ public class SourceIndexSection extends BaseSection implements Cloneable {
 				source = new SourceEntry(this);
 				try
 				{
-					Integer theIndex = new Integer(indexNum);
+					Integer theIndex = Integer.parseInt(indexNum);
 					this.addSourceEntryAtIndex(theIndex, source);
 				}
 				catch (NumberFormatException e)

@@ -25,8 +25,9 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class EDMLParser {
 	private File _fileToParse;

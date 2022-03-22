@@ -25,8 +25,6 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
-
 public class NuendoMarkerPoint 
 {
 	protected TcfToken _dest_in;

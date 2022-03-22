@@ -25,8 +25,11 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Properties;
+import java.util.Vector;
 
 public abstract class BaseSection implements Cloneable, AES31Validation {
 	public static final int TAG_NONE	= -1;

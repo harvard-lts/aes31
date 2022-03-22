@@ -25,7 +25,7 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public abstract class BaseModifier implements Cloneable
 {

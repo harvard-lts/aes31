@@ -25,13 +25,12 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.text.*;
-import java.util.*;
-import java.util.regex.*;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Attribute;
 
 
 /**
@@ -283,9 +282,9 @@ public class EDMLVersion implements Cloneable {
 	}
 										
 										
-	public ArrayList<org.jdom.Attribute> getXmlAttributes ()
+	public ArrayList<Attribute> getXmlAttributes ()
 	{
-		ArrayList<org.jdom.Attribute> rval = new ArrayList<org.jdom.Attribute>();
+		ArrayList<Attribute> rval = new ArrayList<Attribute>();
 		Attribute a;
 		a = new Attribute("majorVersionNumber", Integer.toString(this.getMajorRevision()));
 		rval.add(a);

@@ -25,10 +25,16 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
-import java.io.*;
-import java.net.*;
-import java.nio.charset.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StreamTokenizer;
+import java.io.StringReader;
+import java.nio.charset.Charset;
+import java.util.Vector;
 
 public class ADLTokenizer {
 	

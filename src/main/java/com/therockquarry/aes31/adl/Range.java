@@ -25,11 +25,9 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Attribute;
 
 /**
 *	The <code>Range</code> class provides easy access to an d manipulation of the integer range
@@ -74,13 +72,13 @@ public class Range implements Cloneable, Comparable<Range>
 		}
 		else if (tmp.length == 2)
 		{
-			this.setBegin(new Integer(tmp[0]));
-			this.setEnd(new Integer(tmp[1]));
+			this.setBegin(Integer.parseInt(tmp[0]));
+			this.setEnd(Integer.parseInt(tmp[1]));
 		} 
 		else 
 		{
-			this.setBegin(new Integer(tmp[0]));
-			this.setEnd(new Integer(tmp[0]));
+			this.setBegin(Integer.parseInt(tmp[0]));
+			this.setEnd(Integer.parseInt(tmp[0]));
 		}
 		
 	}
@@ -200,9 +198,9 @@ public class Range implements Cloneable, Comparable<Range>
 		return rval;
 	}
 	
-	public ArrayList<org.jdom.Attribute> getXmlAttributes ()
+	public ArrayList<Attribute> getXmlAttributes ()
 	{
-		ArrayList<org.jdom.Attribute> rval = new ArrayList<org.jdom.Attribute>();
+		ArrayList<Attribute> rval = new ArrayList<Attribute>();
 		Attribute a;
 		
 		a = new Attribute("start", Integer.toString(_begin));

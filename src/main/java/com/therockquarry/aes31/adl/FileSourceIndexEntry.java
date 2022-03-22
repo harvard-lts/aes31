@@ -25,14 +25,13 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.net.*;
-import java.text.*;
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.UUID;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>FileSourceIndexEntry</code> object wraps an aes-31 File_Path element. File_Path is a customised ASCII-only 

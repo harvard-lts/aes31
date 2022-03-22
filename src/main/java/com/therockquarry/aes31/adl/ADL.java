@@ -25,13 +25,17 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URI;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Document;
+import org.jdom2.ProcessingInstruction;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 public class ADL {
 	EDMLParser parser;

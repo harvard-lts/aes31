@@ -25,9 +25,12 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.text.*;
-import java.util.*;
-import java.util.regex.*;
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
 *	The <code>SimpleDate</code> class provides a simple interface for handling ISO 8601 formatted date and time.
