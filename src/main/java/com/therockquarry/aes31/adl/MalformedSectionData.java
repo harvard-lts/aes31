@@ -24,7 +24,9 @@
 */
 
 package com.therockquarry.aes31.adl;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 
 public class MalformedSectionData implements Cloneable{
 

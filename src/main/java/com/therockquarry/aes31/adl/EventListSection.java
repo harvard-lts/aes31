@@ -25,11 +25,15 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.TreeSet;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 public class EventListSection extends BaseSection implements Cloneable {
 	
@@ -581,7 +585,7 @@ public class EventListSection extends BaseSection implements Cloneable {
 			cee = cit.next();
 			r = cee.getDestChannels();
 			for (int i = r.getBegin(); i <= r.getEnd(); i++) {
-				set.add(new Integer(i));
+				set.add(i);
 			}
 		}
 		

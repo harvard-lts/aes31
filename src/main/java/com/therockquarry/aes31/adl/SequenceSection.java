@@ -25,12 +25,11 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.math.*;
-import java.util.*;
+import java.math.BigDecimal;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>SequenceSection</code> object contains global information about the ADL contents and status. The ADL specification is available from the Audio Engineering Society, 

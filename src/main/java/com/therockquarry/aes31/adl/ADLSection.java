@@ -25,12 +25,16 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
+import org.jdom2.Namespace;
 
 /**
 *	The <code>ADLSection</code> object is the root of an Audio Decision List Document. It consists of up to

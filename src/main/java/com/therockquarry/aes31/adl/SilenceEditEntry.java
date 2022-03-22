@@ -25,12 +25,11 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.text.*;
-import java.util.*;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.UUID;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 public class SilenceEditEntry extends BaseEditEntry implements Cloneable
 {

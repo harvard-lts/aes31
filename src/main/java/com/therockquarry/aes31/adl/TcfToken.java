@@ -25,10 +25,12 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.text.*;
-import java.math.*;
-import java.util.*;
-import java.util.regex.*;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.util.Enumeration;
+import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TcfToken implements Cloneable, Comparable<TcfToken>
 {
@@ -840,7 +842,7 @@ public class TcfToken implements Cloneable, Comparable<TcfToken>
 		while (keys.hasMoreElements())
 		{
 			tst = (String)keys.nextElement();
-			double testVal = new Double(_sampleRateNameMap.getProperty(tst)).doubleValue();
+			double testVal = Double.parseDouble(_sampleRateNameMap.getProperty(tst));
 			
 			if (testVal == sr)
 			{

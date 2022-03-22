@@ -25,11 +25,12 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.Enumeration;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 public class BaseEditEntry implements Cloneable, Comparable<BaseEditEntry> 
 {

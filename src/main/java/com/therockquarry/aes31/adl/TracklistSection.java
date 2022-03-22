@@ -29,11 +29,14 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>TracklistSection</code> object contains a track list; 
@@ -80,7 +83,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 		
 		try
 		{
-			trackNo = new Integer(trackNumber).intValue();
+			trackNo = Integer.parseInt(trackNumber);
 			TrackType tt = new TrackType(trackName, this);
 			this.addTrackAtIndex(trackNo, tt);
 		}
@@ -106,7 +109,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 			throw new InvalidDataException("\"" + trackNumber + "\" is not valid. Number must be greater than or equal to 1");
 		}
 		
-		Integer key = new Integer(trackNumber);
+		Integer key = trackNumber;
 		
 		if (_tracks.containsKey(key))
 		{
@@ -118,7 +121,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 			throw new InvalidDataException("Track \"" + track + "\" already exists in the Track List at index \"" + this.getTrackNumberForEntry(track) + "\".");
 		}
 		
-		_tracks.put(new Integer(trackNumber), track);
+		_tracks.put(key, track);
 		track.setParent(this);
 	}
 	
@@ -145,7 +148,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 		
 		if (!_tracks.containsValue(track))
 		{
-			_tracks.put(new Integer(lastKey), track);
+			_tracks.put(lastKey, track);
 			track.setParent(this);
 		}
 		else
@@ -187,7 +190,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 		
 		if (validateTrackNumber(trackNumber))
 		{
-			Integer key = new Integer(trackNumber);
+			Integer key = trackNumber;
 			_tracks.put(key, track);
 			track.setParent(this);
 		}
@@ -206,7 +209,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 	*/
 	public void deleteTrackAtIndex (int trackNumber)
 	{
-		Integer key = new Integer(trackNumber);
+		Integer key = trackNumber;
 		if (_tracks.containsKey(key))
 		{
 			_tracks.remove(key);
@@ -233,7 +236,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 	{
 		TrackType rval = null;
 		
-		rval = (TrackType)_tracks.get(new Integer(trackNumber));
+		rval = (TrackType)_tracks.get(trackNumber);
 		
 		return rval;
 

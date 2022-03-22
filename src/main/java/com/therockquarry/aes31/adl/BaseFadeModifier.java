@@ -89,7 +89,7 @@ public class BaseFadeModifier extends BaseModifier implements Cloneable
 		{
 			try
 			{
-				tmp = new Double(a);
+				tmp = Double.parseDouble(a);
 			}
 			catch (NumberFormatException e)
 			{
@@ -111,7 +111,7 @@ public class BaseFadeModifier extends BaseModifier implements Cloneable
 		{
 			try
 			{
-				tmp = new Double(b);
+				tmp = Double.parseDouble(b);
 			}
 			catch (NumberFormatException e)
 			{
@@ -133,7 +133,7 @@ public class BaseFadeModifier extends BaseModifier implements Cloneable
 		{
 			try
 			{
-				tmp = new Double(c);
+				tmp = Double.parseDouble(c);
 			}
 			catch (NumberFormatException e)
 			{

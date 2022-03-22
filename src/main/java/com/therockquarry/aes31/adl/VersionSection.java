@@ -25,11 +25,10 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>VersionSection</code> object contains all of the version information for this Audio Decision List. It consists of five

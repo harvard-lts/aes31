@@ -26,12 +26,10 @@
 package com.therockquarry.aes31.adl;
 
 import java.math.BigDecimal;
-import java.util.regex.*;
-import java.util.*;
+import java.util.UUID;
+import java.util.Vector;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>SystemSection</code> object contains optional information about system setup parameters of the originating system. The ADL specification is available from the Audio Engineering Society, 

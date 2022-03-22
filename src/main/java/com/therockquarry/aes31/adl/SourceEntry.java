@@ -25,11 +25,10 @@
 
 package com.therockquarry.aes31.adl;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-import org.jdom.*;
-import org.jdom.input.*;
-import org.jdom.output.*;
+import org.jdom2.Element;
 
 /**
 *	The <code>SourceEntry</code> object is a wrapper for the source entry level information stored in the <code>SourceIndexSection</code>
