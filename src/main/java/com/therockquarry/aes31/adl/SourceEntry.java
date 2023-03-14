@@ -76,7 +76,7 @@ public class SourceEntry implements Cloneable {
 	*	Constructs a new <code>SourceEntry</code> object.
 	*
 	 *	@param parent The <code>SourceIndexSection</code> to which this <code>SourceEntry</code> belongs.
-	*	@param entries An array of <code>BaseEditEntry</code> objects with which to initialize this <codeSourceEntry</code>.
+	*	@param entries An array of <code>BaseEditEntry</code> objects with which to initialize this <code>SourceEntry</code>.
 	*/
 	public SourceEntry (SourceIndexSection parent, BaseIndexEntry[] entries) throws InvalidDataException
 	{
