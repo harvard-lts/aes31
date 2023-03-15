@@ -99,7 +99,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 	*	@param trackNumber The track number where the <code>track</code> parameter will be placed in this <code>TracklistSection</code>. 
 	*	@param track The <code>TrackType</code> object to add to this <code>Tracklist</code>. 
 	*	@throws InvalidDataException If this <code>TracklistSection</code> already contains an instance of <code>track</code>, or if the <code>
-	*	trackNumber</code> parameter is out of range (<code>trackNumber</code> < 1) or if this <coded>TracklistSection</code> already contains
+	*	trackNumber</code> parameter is out of range (<code>trackNumber</code> &lt; 1) or if this <code>TracklistSection</code> already contains
 	*	an entry at the specified <code>trackNumber</code>.
 	*/
 	public void addTrackAtIndex (int trackNumber, TrackType track) throws InvalidDataException
@@ -179,7 +179,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 	*	@param trackNumber The track number position in this <code>TracklistSection</code> to set the <code>track</code> parameter to.
 	*	@param track The <code>TrackType</code> object to add to this <code>Tracklist</code>. 
 	*	@throws InvalidDataException If this <code>TracklistSection</code> already contains an instance of <code>track</code>, or if the <code>
-	*	trackNumber</code> parameter is out of range (<code>trackNumber</code> < 1).
+	*	trackNumber</code> parameter is out of range (<code>trackNumber</code> &lt; 1).
 	*/
 	public void setTrackAtIndex (int trackNumber, TrackType track) throws InvalidDataException
 	{
@@ -202,7 +202,7 @@ public class TracklistSection extends BaseSection implements Cloneable {
 	}
 	
 	/**
-	*	Deletes the <ocde>TrackType</code> specified by the <code>trackNumber</code> parameter from this <code>TracklistSection</code>.
+	*	Deletes the <code>TrackType</code> specified by the <code>trackNumber</code> parameter from this <code>TracklistSection</code>.
 	*	If the track does not exist, this call has no effect. 
 	*
 	*	@param trackNumber The track number of the <code>TrackType</code> to be deleted from this <code>TracklistSection</code>.

@@ -120,7 +120,7 @@ public class FileSourceIndexEntry extends BaseIndexEntry implements Cloneable{
 	*	Sets the unique identifier for this <code>FileSurceIndexEntry</code>
 	*	to the value of the <code>uid</code> String, which should contain the
 	*	value of the source audio files Originator Reference field. Validates 
-	*	the passed parameter to ensure it is <= 32 characters in length.
+	*	the passed parameter to ensure it is &lt;= 32 characters in length.
 	*
 	*	@param uid The unique Identifier for the source audio file as found in
 	*	the BEXT chunk's Originator Reference field.
@@ -141,7 +141,7 @@ public class FileSourceIndexEntry extends BaseIndexEntry implements Cloneable{
 	
 	/**
 	*	Returns the Unique Identifier for the audio file associated with this 
-	*	</code>FileSourceIndexEntry</code>.
+	*	<code>FileSourceIndexEntry</code>.
 	*
 	*	@return A String containing the unique identifier for the audio file 
 	*	associated with this <code>FileSourceIndexEntry</code>.
