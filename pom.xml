@@ -67,22 +67,6 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>lts-libs-all</id>
-			<name>Harvard LTS Dependency Repository</name>
-			<url>${lts-artifactory-url}/lts-maven</url>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>lts-libs-all-plugins</id>
-			<name>Harvard LTS Plugin Repository</name>
-			<url>${lts-artifactory-url}/lts-maven</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<distributionManagement>
 		<!-- repository URL and credentials set up in local .m2/settings.xml -->
 		<repository>
